@@ -1,0 +1,36 @@
+.menu{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu a{
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    opacity: 0.3;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    color:#121212;
+    transition: color 200ms ease 0s;
+    -webkit-font-smoothing: antialiased;
+}
+ 
+.logopage{
+    width: 50px !important;
+    border-radius: 200px;
+}
+ 
+.menu a.active{
+    opacity:1;
+    color:#E7165D;
+}
+ 
+.menu a:hover{
+    opacity:1;color:#121212;
+}
