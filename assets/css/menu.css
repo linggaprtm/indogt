@@ -1,7 +1,12 @@
 .menu{
+    text-align: left;
+    overflow: auto hidden;
+    white-space: nowrap;
+    transition: all 0.5s ease 0s;
+
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: center;
+    /* justify-content: center; */
     -webkit-box-align: center;
     align-items: center;
     padding-top: 10px;
@@ -15,10 +20,17 @@
     line-height: 20px;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     color:#121212;
     transition: color 200ms ease 0s;
     -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 768px){
+    .menu{
+     justify-content: center;
+    }
 }
  
 .logopage{
@@ -34,3 +46,21 @@
 .menu a:hover{
     opacity:1;color:#121212;
 }
+
+.hamburger.-active {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger-top {
+    stroke-dasharray: 40 139;
+}
+
+.hamburger-line {
+    fill: none;
+    stroke: var(--color-type-white);
+    stroke-width: 3;
+    -webkit-transition: stroke-dasharray .4s,stroke-dashoffset .4s;
+    transition: stroke-dasharray .4s,stroke-dashoffset .4s;
+}
+

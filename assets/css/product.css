@@ -29,7 +29,8 @@
     content: "";
     position: absolute;
     /* display: block; */
-    width: 75%;
+    /* width: 75%; */
+    width: calc(75% - 5px);
     height: 28px;
     /* background: #000; */
     bottom: 20%;
@@ -39,3 +40,8 @@
     /* left: -10px; */
 }
 
+@media (min-width: 768px){
+    .title-keunggulan::after{
+        width: calc(75% - 120px);
+    }
+}
