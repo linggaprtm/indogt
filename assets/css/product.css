@@ -19,6 +19,27 @@
     padding-left:15px
 }
 
+.title-specification-safety{
+    font-size: 1.5rem; 
+    font-weight: 600;
+    position: relative;
+    padding-left: 15px;
+}
+.title-specification-safety::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 15px;
+    background: #ffff;
+    margin: 5p;
+    bottom: 35%;
+    left: -10px;
+}
+.desc-specification-safety{
+    padding-left:15px
+}
+
 .title-keunggulan{
     /* font-size: 1.5rem;  */
     font-weight: 600;
