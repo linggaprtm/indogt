@@ -119,3 +119,26 @@ stroke-dasharray: 90 207;
 stroke-dashoffset: -134;
 stroke-width: 6;
 }
+
+
+.field-search{
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 1.25rem;
+  }
+  .btn-search{
+    border-top-left-radius: 0;
+    border-top-right-radius: 1.25em;
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 0;
+    background-color: #8b8b8b;
+  }
+  
+  .search-svg-icon{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    position: relative;
+  }
