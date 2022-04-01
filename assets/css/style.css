@@ -1,5 +1,7 @@
 body{
     font-family: 'Poppins', serif;
+    max-width: 1760px;
+    margin: 0 auto;
 }
 
 /* .container {
