@@ -6,7 +6,7 @@ function validateForm() {
       return false;
     }
     else{
-        const base_url = 'http://127.0.0.1:5500';
+        const base_url = 'https://indogt.netlify.app';
         const array1 = [
             'phostoxin 56 tb', 'magtoxin 56 pb', 'phostoxin 57 p', 'magtoxin 60 tb', 'delicia gastoxin 56 tb', 'indofum 99 ga',
             'deltagard 25 ec' , 
