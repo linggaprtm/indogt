@@ -35,8 +35,12 @@ function validateForm() {
         let modified = x.toLowerCase().toString();
 
         let found = array1.findIndex(element => element === modified);
-        
-        window.location.href = base_url + arrayUrl[found];
+        if(found >= 0){
+            window.location.href = base_url + arrayUrl[found];
+        }
+        else{
+            window.location.href = base_url;
+        }
         
         // console.log(arrayUrl[found]);
         // alert(arrayUrl[found]);
