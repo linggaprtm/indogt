@@ -2,12 +2,12 @@ function validateForm() {
     // preventDefault();
     let x = document.forms["searchProductForm"]["fsearch"].value;
     if (x == "") {
-      alert("Prodduct is not found!!");
+      alert("Produk tidak ditemukan!!");
       return false;
     }
     else{
-        const base_url = 'https://indogt.netlify.app';
-        const array1 = [
+        const base_url = window.location.origin;
+        const arrayName = [
             'phostoxin 56 tb', 'magtoxin 56 pb', 'phostoxin 57 p', 'magtoxin 60 tb', 'delicia gastoxin 56 tb', 'indofum 99 ga',
             'deltagard 25 ec' , 
             'full face mask', 'self contained breathing apparatus', 'filter rd 40', 'accuro pump', 'drager tube', 'x-am 5600', 'x-am 8000', 'pac 8000',
@@ -34,16 +34,17 @@ function validateForm() {
 
         let modified = x.toLowerCase().toString();
 
-        let found = array1.findIndex(element => element === modified);
-        if(found >= 0){
-            window.location.href = base_url + arrayUrl[found];
-        }
-        else{
-            window.location.href = base_url;
+        for (i = 0; i < arrayName.length; i++) {
+            a = arrayName[i];
+            txtValue = arrayName[i];
+            if (txtValue.toLowerCase().indexOf(modified) > -1) {
+                window.location.href = base_url + arrayUrl[i];
+            }
+            else{
+                window.location.href = base_url;
+            }
         }
         
-        // console.log(arrayUrl[found]);
-        // alert(arrayUrl[found]);
         return false;
     }
   }
